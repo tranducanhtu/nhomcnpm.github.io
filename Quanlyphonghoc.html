@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Admin panel VTL</title>
+    <meta name="description" content="">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>  
+    <!-- Left column -->
+    <div class="mobile-menu-icon">
+      <a href="javascript:void(0)" class="closebtn4" onclick="openmobile()"> <i class="fa fa-bars"></i></a>
+  </div>
+    <div class="flex">
+      <div class="hero">
+        <div id="cls" class="closem">
+          <div class="closem-content">
+            <button onclick="closemobile()" style="width:100%;height:100%;background-color:rgba(0, 0, 0, 0);border: none"></button>
+        </div>
+        </div>
+        
+        <div id="opmb" class="mobile">
+          <div class="mobile-content">
+  
+            <nav id="nav-menu-container1" >
+  
+              <ul class="nav-menu">
+                <li><a href="index.html"><i class="fa fa-home fa-fw"></i>trang chủ</a></li>
+                <li><a href="Quanlytaikhoan.html"class="active"><i class="fa fa-sliders fa-fw"></i>Quản lý tài khoản</a></li>
+                <li><a href="Quanlynhansu.html" ><i class="fa fa-users fa-fw"></i>Quản lý nhân sự</a></li>
+                <li><a href="Quanlyhocvien.html"><i class="fa fa-users fa-fw"></i>Quản lý học viên</a></li>
+                <li><a href="Quanlyphonghoc.html" ><i class="fa fa-map-marker fa-fw"></i>Quản lý lớp học</a></li>
+                <li><a href=""><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      </div>
+      <div class="menu">
+        <header class="logo">
+          <div class="square">
+            <img src="images/tu1 - Chaien.png" style="width:40px;height:40px;" alt="">
+          </div>
+          <h1>Admin panel</h1>
+        </header>
+          
+        <form class="search">
+          <div class="input">
+              <button type="submit" class="fa fa-search"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+          </div>
+        </form>
+
+        <nav class="nav-left">          
+          <ul>
+            <li><a href="index.html"><i class="fa fa-home fa-fw"></i>trang chủ</a></li>
+            <li><a href="Quanlytaikhoan.html"><i class="fa fa-sliders fa-fw"></i>Quản lý tài khoản</a></li>
+            <li><a href="Quanlynhansu.html" ><i class="fa fa-users fa-fw"></i>Quản lý nhân sự</a></li>
+            <li><a href="Quanlyhocvien.html"><i class="fa fa-users fa-fw"></i>Quản lý học viên</a></li>
+            <li><a href="Quanlyphonghoc.html" class="active"><i class="fa fa-map-marker fa-fw"></i>Quản lý lớp học</a></li>
+            <li><a href=""><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>  
+        </nav>
+      </div>
+      <!-- Main content --> 
+      <div class="content" style="flex:1;background-color: #efefef;">
+        <div class="templatemo-top-nav-container">
+          <div class="content-top-container">
+            <div class="row">
+              <nav class="content-top col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                    <li><a href="Quanlytaikhoan.html" >Tài khoản</a></li>
+                    <li><a href="Quanlynhansu.html">Nhân Sự</a></li>
+                    <li><a href="Quanlyhocvien.html">Học viên</a></li>
+                    <li><a href="Quanlyphonghoc.html"class="active">Lớp Học</a></li>
+                </ul>  
+              </nav> 
+            </div>
+          </div>
+        <div class="content-container">
+          <div class="introduce">
+            <div class=" panel-default table-responsive">
+              <table class="table  table-bordered headtitle">       <!-- table-bordered:viền tb --> 
+                <thead>
+                  <tr>
+                    <td><a href="" class="headcolor"># <span class="caret"></span></a></td>
+                    <td><a href="" class="headcolor">Class code <span class="caret"></span></a></td>
+                    <td><a href="" class="headcolor">Class Name <span class="caret"></span></a></td>
+                    <td>Edit</td>
+                    <td>Action</td>
+                    <td>Delete</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>CDTH19E</td>
+                    <td>Cao đẳng tin học 19E</td>
+                    <td><a href="" class="editfrom">Edit</a></td>
+                    <td><a href="" class="action">Enable</a></td>
+                    <td><a href="" class="action">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>CDTH19E</td>
+                    <td>Cao đẳng tin học 19E</td>
+                    <td><a href="" class="editfrom">Edit</a></td>
+                    <td><a href="" class="action">Enable</a></td>
+                    <td><a href="" class="action">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>CDTH19E</td>
+                    <td>Cao đẳng tin học 19E</td>
+                    <td><a href="" class="editfrom">Edit</a></td>
+                    <td><a href="" class="action">Enable</a></td>
+                    <td><a href="" class="action">Delete</a></td>
+                  </tr>                    
+                </tbody>
+              </table>    
+            </div>                          
+          </div>          
+         
+        
+          <div class="pagination-wrap">
+            <ul class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-play"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>          
+          <footer class="text-right">
+            <p>Copyright &copy; Tú Vũ Lộc </p>          </footer>         
+        </div>
+      </div>
+    </div>
+    
+    <script>function openmobile() {
+      document.getElementById("opmb").style.width="35%"
+      document.getElementById("opmb").style.height="100%"
+      document.getElementById("cls").style.width="100%"
+      document.getElementById("cls").style.height="100%"
+      }
+      
+      function closemobile() {
+      document.getElementById("opmb").style.width = "0%";
+      document.getElementById("opmb").style.height = "100%";
+      document.getElementById("cls").style.width="0%"
+      document.getElementById("cls").style.height="0%"
+      }
+      </script>
+  </body>
+</html>
